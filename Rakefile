@@ -9,22 +9,7 @@ rescue Bundler::BundlerError => e
 end
 require 'rake'
 
-require 'jeweler'
-Jeweler::Tasks.new do |gem|
-  gem.name = "mechanize-progressbar"
-  gem.homepage = "http://github.com/kitamomonga/mechanize-progressbar"
-  gem.license = "MIT"
-  gem.summary = "Mechanize-Progressbar provides ProgressBar for Mechanize#get and Link#click. requires 'progressbar' gem."
-  gem.description = "Mechanize-Progressbar shows ProgressBar when HTTP GET access of Mechanize(Mechanize#get, Page::Link#click, response of Form#submit). It requires 'progressbar' gem. HTTP POST is not supported."
-  gem.email = "kitamomonga@gmail.com"
-  gem.authors = ["kitamomonga"]
-  # See ./Gemfile
-  # gem.add_runtime_dependency 'mechanize', '>= 1.0.0'
-  # gem.add_runtime_dependency 'progressbar', '>= 0.9.0'
-  # gem.add_development_dependency 'rspec', '> 1.2.3'
-  # gem.add_development_dependency 'webmock', '> 1.6.1'
-end
-Jeweler::RubygemsDotOrgTasks.new
+require "bundler/gem_tasks"
 
 require 'rspec/core'
 require 'rspec/core/rake_task'
